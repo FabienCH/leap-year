@@ -1,7 +1,7 @@
-import { helloWorld } from './index';
+import { isLeapYear } from './index';
 
-describe('helloWorld', () => {
-  it('should return Hello World', () => {
-    expect(helloWorld()).toEqual('Hello World');
+describe('isLeapYear', () => {
+  it('a year is not a leap year if not divisible by 4', () => {
+    expect(isLeapYear(1997)).toBeFalsy();
   });
 });

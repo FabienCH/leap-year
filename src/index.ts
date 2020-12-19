@@ -1,3 +1,3 @@
-export function helloWorld(): string {
-  return 'Hello World';
+export function isLeapYear(_year: number): boolean {
+  return false;
 }
