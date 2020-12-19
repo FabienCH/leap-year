@@ -14,4 +14,9 @@ describe('isLeapYear', () => {
     expect(isLeapYear(1600)).toBeTruthy();
     expect(isLeapYear(2000)).toBeTruthy();
   });
+
+  it('a year is not a leap year if divisible by 100 but not by 400', () => {
+    expect(isLeapYear(1800)).toBeFalsy();
+    expect(isLeapYear(2200)).toBeFalsy();
+  });
 });
