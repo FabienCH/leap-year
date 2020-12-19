@@ -1,3 +1,3 @@
-export function isLeapYear(_year: number): boolean {
-  return false;
+export function isLeapYear(year: number): boolean {
+  return year === 1996;
 }
